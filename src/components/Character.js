@@ -12,18 +12,9 @@ const StyledCharacters = styled.div`
 
     // titles are buttons. Need to attach links at a later time
     // Links to characters bio's
-    button{
-        background:none;
-        border:none;
-        text-decoration:none;
+    h1{
         text-transform: uppercase;
-        font-size:1.5rem;
-
-        &:hover {
-            color:${(pr) => pr.theme.white};
-            border:2px dashed red;
-            border-radius:5px;
-        }
+        font-size:1.7rem;
     }
 
     p{
@@ -53,9 +44,9 @@ const StyledCharacters = styled.div`
 const Character = (props) => {
     const {data} = props
     return (
-        <StyledCharacters>
-            <button>{data.name}</button>
+        <StyledCharacters>            
             <div>
+            <h1>{data.name}</h1>
             <p>Height: {data.height}</p>
             <p>Weight: {data.mass}</p>
             <p>Eye color: {data.eye_color}</p>

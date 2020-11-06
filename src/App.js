@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import axios from "axios";
-import Characters from './components/Character'
+import Character from './components/Character'
 import './App.css';
 
 const App = () => {
@@ -32,7 +32,7 @@ const App = () => {
       {
         //mapping over the object and setting the results to obj
         data.map(obj => {
-          return <Characters data ={obj}/>
+          return <Character data ={obj}/>
         })
       }
     </div>

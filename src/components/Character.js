@@ -4,17 +4,13 @@ import React from "react";
 import styled from 'styled-components';
 
 const StyledCharacters = styled.div`
-/* display:flex; */
-    justify-items: center;
+    /* display:flex; */
+    /* justify-items: center;
     align-content:center;
-    justify-content:space-between;
-    border: 3px solid black;
+    justify-content:space-between; */
+    /* border: 3px solid black;
     width: 30%;
-    div{
-        display:flex;
-        justify-content:center;
-        border:1px solid green;
-    }
+ */ */
 
 
 

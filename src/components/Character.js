@@ -8,13 +8,22 @@ const StyledCharacters = styled.div`
     display: inline-block;
     border: 3px solid black;
     margin:1%;
-
     width: 25%;
 
-    h2{
+    // titles are buttons. Need to attach links at a later time
+    // Links to characters bio's
+    button{
+        background:none;
+        border:none;
+        text-decoration:none;
         text-transform: uppercase;
         font-size:1.5rem;
 
+        &:hover {
+            color:${(pr) => pr.theme.white};
+            border:2px dashed red;
+            border-radius:5px;
+        }
     }
 
     p{
@@ -45,7 +54,7 @@ const Character = (props) => {
     const {data} = props
     return (
         <StyledCharacters>
-            <h2>{data.name}</h2>
+            <button>{data.name}</button>
             <div>
             <p>Height: {data.height}</p>
             <p>Weight: {data.mass}</p>

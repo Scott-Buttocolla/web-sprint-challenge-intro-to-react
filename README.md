@@ -28,13 +28,13 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
-1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web. React JS was created by facebook to solve a number of issues. By using React JS, we can now add HTML without directly adding it to the HTML file allowing for a more fluid render of the page and also allowing some items to be delayed on first load using JSX. Using hooks (state, and effect) just to name 2 we have gone over, we can now add effects that render in a sensicale order to allow for a smoother load or transition between pages or content.
 
-1. Describe component state.
+1. Describe component state. A component state is an object that when the state changes that component will re render on the page.This allows use to set functions to specific components on a web page to target that object and not a blank target.
 
-1. Describe props.
+1. Describe props. Props is short for properties and is a specific key word in React. Props allow someone to pass data from one component to another. Data cannot be passed to any place but in a linear format from child to parent and then at that point can be extracted and passed again.
 
-1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+1. What are side effects, and how do you sync effects in a React component to changes of certain state or props? Side effects are effects that render in order. Some can render upon first load and not re render again unless the page is reloaded. Other side effects happen when an action by the user is performed such as a click, mouseover, scroll and based on this can re render multiple times to create a responive web page by counting your clicks for example and after a certain number of clicks something is set to happen.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 

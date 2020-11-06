@@ -4,19 +4,36 @@ import React from "react";
 import styled from 'styled-components';
 
 const StyledCharacters = styled.div`
-    /* display:flex; */
-    /* justify-items: center;
-    align-content:center;
-    justify-content:space-between; */
-    /* border: 3px solid black;
-    width: 30%;
- */ */
+    padding:2%;
+    display: inline-block;
+    border: 3px solid black;
+    margin:1%;
 
+    width: 25%;
 
+    h2{
+        text-transform: uppercase;
+        font-size:1.5rem;
 
+    }
 
+    p{
+        font-weight:bold;
+        font-size:1rem;
+    }
 
-
+    &:hover {
+        border-radius:25%;
+        opacity: 100%;
+        color: ${(pr) => pr.theme.white};
+        background: ${(pr) => pr.theme.black};;
+        transition: all 0.8s ease-in-out;
+    }
+    transition: all 0.8s ease-in-out;
+    // above is for when leaving the object
+    div p{
+        letter-spacing:1.1px;
+    }
 `
 // back tic above
 
